@@ -11,10 +11,10 @@ const Header = () => {
         <section className="btn-add">
           {modal ? (
             <button className="btn-close" onClick={() => setModal(!modal)}>
-              x
+              X
             </button>
           ) : (
-            <button onClick={() => setModal(!modal)}>+</button>
+            <button onClick={() => setModal(!modal)}>Add Transaction</button>
           )}
         </section>
       </div>
