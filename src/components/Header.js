@@ -14,7 +14,7 @@ const Header = () => {
               X
             </button>
           ) : (
-            <button onClick={() => setModal(!modal)}>Add Transaction</button>
+            <button onClick={() => setModal(!modal)}>+</button>
           )}
         </section>
       </div>
