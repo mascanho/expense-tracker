@@ -1,5 +1,5 @@
 import React, { createContext, useReducer, useEffect, useState } from "react";
-import AppReducer from "./AppReducer";
+import { AppReducer } from "./AppReducer";
 
 const storedData = JSON.parse(localStorage.getItem("transactions"));
 
