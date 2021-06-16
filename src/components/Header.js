@@ -3,8 +3,7 @@ import { GlobalContext } from "../context/GlobalState";
 import AddTransaction from "./AddTransaction";
 
 const Header = () => {
-  const { modal, setModal, openModal, transactions } =
-    useContext(GlobalContext);
+  const { modal, setModal } = useContext(GlobalContext);
   return (
     <>
       <div>

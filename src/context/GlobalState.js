@@ -17,6 +17,8 @@ export const GlobalProvider = ({ children }) => {
   const [value, setValue] = useState(state);
   const [modal, setModal] = useState(false);
 
+  console.log(value);
+
   const openModal = () => {
     setModal(true);
   };

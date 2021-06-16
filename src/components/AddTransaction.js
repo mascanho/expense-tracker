@@ -1,11 +1,8 @@
-import React, { useState, useContext, useEffect } from "react";
+import React, { useState, useContext } from "react";
 import { GlobalContext } from "../context/GlobalState";
-import Transaction from "./Transaction";
-
-const localStored = JSON.parse(localStorage.getItem("transactions")) || "[]";
 
 const AddTransaction = () => {
-  const { addTransaction, transactions, setModal } = useContext(GlobalContext);
+  const { addTransaction, setModal } = useContext(GlobalContext);
   const [text, setText] = useState("");
   const [amount, setAmount] = useState("");
   const [expenseType, setExpenseType] = useState("");
