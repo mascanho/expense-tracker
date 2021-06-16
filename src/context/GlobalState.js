@@ -3,9 +3,11 @@ import { AppReducer } from "./AppReducer";
 
 const storedData = JSON.parse(localStorage.getItem("transactions"));
 
+console.log(storedData);
+
 // Initial State
 const initialState = {
-  transactions: [...storedData],
+  transactions: storedData ? [...storedData] : [],
 };
 
 // Create Global Context
