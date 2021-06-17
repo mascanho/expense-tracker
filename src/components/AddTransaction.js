@@ -10,6 +10,10 @@ const AddTransaction = () => {
   const onSubmitHandler = (e) => {
     e.preventDefault();
 
+    if (amount === "" || expenseType === "") {
+      return alert("You can't add blank expenses");
+    }
+
     const newTransaction = {
       id: Math.floor(Math.random() * 10000000),
       text,
