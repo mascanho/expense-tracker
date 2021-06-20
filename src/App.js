@@ -6,6 +6,7 @@ import TransactionList from "./components/TransactionList";
 import { GlobalProvider } from "./context/GlobalState";
 
 function App() {
+  document.title = "Expense Tracker";
   return (
     <GlobalProvider>
       <Header />
