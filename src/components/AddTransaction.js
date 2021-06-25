@@ -57,7 +57,7 @@ const AddTransaction = () => {
               onChange={(e) => setText(e.target.value)}
             />
             <div className="form-control">
-              <label htmlFor="amount">amount (Expense (-) )</label>
+              <label htmlFor="amount">amount (Expense "-" )</label>
               <input
                 type="number"
                 placeholder="enter amount"
